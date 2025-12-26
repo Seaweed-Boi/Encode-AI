@@ -42,10 +42,10 @@ export default function Teams() {
       members: [
         { name: "Kaveri Sharma", github: "https://github.com/kaverii11", linkedin: "https://www.linkedin.com/in/kaveri-sharma-48220926a/", role: "Head" },
         { name: "Piyush Shiv", github: "https://github.com/PiyushShiv26", linkedin: "https://www.linkedin.com/in/piyushshiv/", role: "Head" },
+        { name: "Harsh Pandya", github: "https://github.com/Seaweed-Boi", linkedin: "https://www.linkedin.com/in/harsh-pandya-pes/", role: "Member" },
         { name: "Sai Rishi Gangarapu", github: "https://github.com/sairishigangarapu", linkedin: "https://www.linkedin.com/in/sai-rishi-gangarapu/", role: "Member" },
         { name: "Rahul P", github: "https://github.com/RahulP2007", linkedin: "https://www.linkedin.com/in/rahul-p-75ab50283", role: "Member" },
-        { name: "Nayan Mondal", github: "https://github.com/nayanmondal4", linkedin: "https://www.linkedin.com/in/nayanmondall", role: "Member" },
-        { name: "Harsh Pandya", github: "https://github.com/Seaweed-Boi", linkedin: "https://www.linkedin.com/in/harsh-pandya-pes/", role: "Member" }
+        { name: "Nayan Mondal", github: "https://github.com/nayanmondal4", linkedin: "https://www.linkedin.com/in/nayanmondall", role: "Member" }
       ]
     },
     {
