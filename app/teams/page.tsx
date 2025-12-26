@@ -2,388 +2,137 @@ import { Users, Code, Brain, Rocket, Database, Cloud, Shield, Palette, MessageSq
 import { Sidebar } from "@/components/sidebar"
 
 export default function Teams() {
+  const domains = [
+    {
+      name: "AIML",
+      icon: Brain,
+      description: "Exploring machine learning, deep learning, and AI research",
+      members: ["Kashish K S B A", "Saharsh", "Rahul Jaikrishna", "Samriddhi Rajesh Kori", "Pratham M J", "Shriya Mohanty", "Ruchitha.L", "Aditi Hubli", "Ananya Raghavendra", "Abirami M"]
+    },
+    {
+      name: "WebDev",
+      icon: Code,
+      description: "Building modern web applications and digital experiences",
+      members: ["Shashank D", "Pratheek J Gowda", "Tanmay M Jain", "Srinidhi Venkata Subramonyam"]
+    },
+    {
+      name: "Competitive Coding",
+      icon: Rocket,
+      description: "Mastering algorithms and problem-solving competitions",
+      members: ["N Riddhi Samitha", "Padarthi Neha Sai", "Lakshanyaa Shree", "Bhavith Kumar Yarava", "Sai Charan B K", "Aarush Anil Hegde", "Navya Mohithe", "Sunay Hegde P T"]
+    },
+    {
+      name: "Logs",
+      icon: Database,
+      description: "Managing documentation, content, and knowledge systems",
+      members: ["Manchikanti Sharvani", "Disha S", "Samitha", "Mrunmayi Mohite", "Piyush Shiv", "Sachchit Tadikonda", "Gagan P", "Svasthi S", "Hrushikesh K"]
+    },
+    {
+      name: "EVM",
+      icon: Cloud,
+      description: "Organizing events, workshops, and community activities",
+      members: ["Hannah Shebin", "Vamsi Krishna", "Rachit Upadhyay", "Mohammed Fahaad", "Pranav Ganesh", "Aryaman D K", "Nihaal Jadav", "Rohini Vishu", "Vishal H", "Shloka Reddy T"]
+    },
+    {
+      name: "Sponsorship & Marketing",
+      icon: MessageSquare,
+      description: "Building partnerships and promoting club initiatives",
+      members: ["Manit Bohra", "Nidhi Sanjay", "Neha PM", "Nikhita Uppar", "Ada Sharma", "Narasappagari Himavarshini", "Saanvi V Sutar", "Navya Suresh", "Keertana BS"]
+    },
+    {
+      name: "Design",
+      icon: Palette,
+      description: "Creating visual identities and user experiences",
+      members: ["Sidda Baasanthi Reddy", "Biswarup Dutta", "Ritu Ravish", "Raashi Hegde", "Vibha Vasisht", "Greeshma G", "Mounika"]
+    },
+    {
+      name: "Public Relations",
+      icon: Users,
+      description: "Managing communications and community engagement",
+      members: ["Chetana Vijayakumar", "Manvith Rao K G", "Deeptanshu Kumar", "Abheetha Mallya", "DHRUV TALAVAT", "Akshat Tripathi", "Krupa Jadhav"]
+    },
+    {
+      name: "Ops",
+      icon: Shield,
+      description: "Ensuring smooth operations and logistics",
+      members: ["Vinitha U S", "Kushal Nayak M", "PAVAN D C", "Raj Deepak Ladha", "Harsh Pandya", "Rithu Preethi Charanesh S"]
+    },
+    {
+      name: "Hospitality",
+      icon: MessageSquare,
+      description: "Creating welcoming experiences for members and guests",
+      members: ["Kaveri sharma", "Abhiram R", "Rahul P", "Hariom Khonde", "Nayan Mondal", "Shraavani Balaji", "Saanvi Aarya Tedla", "Samskruthi Gowda P", "Ayush bastawad", "Advita Sai", "Dhanya vishwanath"]
+    }
+  ]
+
   return (
     <div className="flex min-h-screen">
       <Sidebar />
       <div className="flex-1 md:ml-64">
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-black">
           {/* Leadership Section */}
           <section className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-            <div className="mb-16 text-center">
-              <h1 className="mb-4 text-4xl font-bold tracking-tight lg:text-5xl">Leadership</h1>
-              <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+            <div className="mb-20 text-center">
+              <h1 className="mb-6 text-5xl font-bold uppercase tracking-tight text-white lg:text-6xl">Leadership</h1>
+              <p className="mx-auto max-w-2xl text-lg font-mono leading-relaxed text-white">
                 Meet the visionary leaders guiding encode ai towards innovation and excellence
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-              <div className="flex flex-col items-center rounded-lg border border-border bg-card p-6 text-center">
-                <div className="mb-4 h-32 w-32 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                <h3 className="mb-1 text-xl font-semibold">Sarah Chen</h3>
-                <p className="mb-2 text-sm text-primary">President</p>
-                <p className="text-sm text-muted-foreground">
-                  ML Engineer passionate about democratizing AI education and building inclusive tech communities
+              <div className="flex flex-col items-center rounded-none border-2 border-white bg-black p-8 text-center shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]">
+                <div className="mb-6 h-40 w-40 rounded-none border-2 border-white bg-[rgb(255,102,0)]" />
+                <h3 className="mb-2 text-xl font-bold uppercase text-white">Harshita Goyal</h3>
+                <p className="mb-3 text-sm font-bold uppercase text-[rgb(255,102,0)]">Club Head</p>
+                <p className="font-mono text-sm leading-relaxed text-white">
+                  Leading encode ai with vision and passion for AI innovation
                 </p>
               </div>
-              <div className="flex flex-col items-center rounded-lg border border-border bg-card p-6 text-center">
-                <div className="mb-4 h-32 w-32 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                <h3 className="mb-1 text-xl font-semibold">Marcus Williams</h3>
-                <p className="mb-2 text-sm text-primary">Vice President</p>
-                <p className="text-sm text-muted-foreground">
-                  Computer Vision researcher focused on real-time applications and ethical AI development
-                </p>
-              </div>
-              <div className="flex flex-col items-center rounded-lg border border-border bg-card p-6 text-center">
-                <div className="mb-4 h-32 w-32 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                <h3 className="mb-1 text-xl font-semibold">Priya Patel</h3>
-                <p className="mb-2 text-sm text-primary">Technical Lead</p>
-                <p className="text-sm text-muted-foreground">
-                  Full-stack developer specializing in AI integration and scalable system architecture
-                </p>
-              </div>
-              <div className="flex flex-col items-center rounded-lg border border-border bg-card p-6 text-center">
-                <div className="mb-4 h-32 w-32 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                <h3 className="mb-1 text-xl font-semibold">Alex Kim</h3>
-                <p className="mb-2 text-sm text-primary">Events Coordinator</p>
-                <p className="text-sm text-muted-foreground">
-                  NLP enthusiast organizing impactful workshops, hackathons, and community events
+              <div className="flex flex-col items-center rounded-none border-2 border-white bg-black p-8 text-center shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]">
+                <div className="mb-6 h-40 w-40 rounded-none border-2 border-white bg-[rgb(255,102,0)]" />
+                <h3 className="mb-2 text-xl font-bold uppercase text-white">Rashi Joshi</h3>
+                <p className="mb-3 text-sm font-bold uppercase text-[rgb(255,102,0)]">Club Head</p>
+                <p className="font-mono text-sm leading-relaxed text-white">
+                  Driving community growth and technical excellence
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Teams Section */}
-          <section className="border-t border-border bg-muted/30">
+          {/* Domains Section */}
+          <section className="border-t-4 border-white bg-zinc-950">
             <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-              <div className="mb-16 text-center">
-                <h2 className="mb-4 text-3xl font-bold tracking-tight lg:text-4xl">Our Teams</h2>
-                <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+              <div className="mb-20 text-center">
+                <h2 className="mb-6 text-4xl font-bold uppercase tracking-tight text-white lg:text-5xl">Our Domains</h2>
+                <p className="mx-auto max-w-2xl text-lg font-mono leading-relaxed text-white">
                   Specialized teams working on cutting-edge AI technologies and real-world applications
                 </p>
               </div>
-              <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-                {/* Machine Learning Team */}
-                <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Brain className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Machine Learning</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Developing predictive models, recommendation systems, and advanced algorithms
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-border pt-4">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Team Members</p>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Emma Rodriguez</p>
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                {domains.map((domain) => {
+                  const Icon = domain.icon
+                  return (
+                    <div key={domain.name} className="flex flex-col gap-6 rounded-none border-2 border-white bg-black p-8 shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]">
+                      <div className="flex h-16 w-16 items-center justify-center rounded-none border-2 border-white bg-[rgb(255,102,0)]">
+                        <Icon className="h-8 w-8 text-black" />
                       </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">James Liu</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Sofia Martinez</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Ryan O'Connor</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Aisha Khan</p>
+                      <h3 className="text-xl font-bold uppercase text-white">{domain.name}</h3>
+                      <p className="font-mono text-sm leading-relaxed text-white">
+                        {domain.description}
+                      </p>
+                      <div className="mt-4 space-y-4 border-t-2 border-white pt-6">
+                        <p className="text-xs font-bold uppercase tracking-wider text-white">Team Members</p>
+                        <div className="space-y-2">
+                          {domain.members.map((member) => (
+                            <div key={member} className="flex items-center gap-2">
+                              <div className="h-2 w-2 rounded-none bg-[rgb(255,102,0)]" />
+                              <p className="font-mono text-xs text-white">{member}</p>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                {/* Deep Learning Team */}
-                <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Rocket className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Deep Learning</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Building neural networks, transformers, and exploring state-of-the-art architectures
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-border pt-4">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Team Members</p>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">David Zhang</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Isabella Santos</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Michael Okafor</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Yuki Tanaka</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Olivia Brown</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Computer Vision Team */}
-                <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Palette className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Computer Vision</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Creating image recognition, object detection, and generative AI systems
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-border pt-4">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Team Members</p>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Lucas Silva</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Maya Gupta</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Noah Williams</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Zara Ahmed</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Ethan Park</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Natural Language Processing Team */}
-                <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <MessageSquare className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Natural Language Processing</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Building chatbots, sentiment analysis tools, and language models
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-border pt-4">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Team Members</p>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Ava Thompson</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Carlos Mendez</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Leah Cohen</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Omar Hassan</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Chloe Wang</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Data Engineering Team */}
-                <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Database className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Data Engineering</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Managing data pipelines, warehouses, and ensuring quality datasets
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-border pt-4">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Team Members</p>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Gabriel Rossi</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Hannah Lee</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Isaac Nkosi</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Jasmine Patel</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Kevin Nguyen</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* MLOps Team */}
-                <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Cloud className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">MLOps</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Deploying and monitoring AI models in production with scalability
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-border pt-4">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Team Members</p>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Liam Anderson</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Mia Johnson</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Nathan Kumar</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Rachel Green</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Samuel Adeyemi</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* AI Ethics Team */}
-                <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Shield className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">AI Ethics</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Researching responsible AI, bias detection, and ethical deployment
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-border pt-4">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Team Members</p>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Sophia Clarke</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Tyler Morrison</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Amara Obi</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Benjamin Cole</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Diana Fernandez</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Full Stack Development Team */}
-                <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Code className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Full Stack Development</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Building web applications and platforms to showcase AI models
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-border pt-4">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Team Members</p>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Emily Davis</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Felix Müller</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Grace Nakamura</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Henry Wilson</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Iris Chen</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Research Team */}
-                <div className="flex flex-col gap-4 rounded-lg border border-border bg-card p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Users className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Research</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Exploring novel AI techniques, publishing papers, and driving innovation
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-border pt-4">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Team Members</p>
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Jack Peterson</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Kira Sato</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Leo Ramirez</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Morgan Taylor</p>
-                      </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-primary/60" />
-                        <p className="text-center text-xs font-medium">Nina Sharma</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  )
+                })}
               </div>
             </div>
           </section>

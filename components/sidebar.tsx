@@ -25,24 +25,24 @@ export function Sidebar() {
         className="fixed left-4 top-4 z-50 md:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </Button>
 
       {/* Sidebar */}
       <aside
-        className={`fixed left-0 top-0 z-40 h-screen w-64 border-r-2 border-primary/30 bg-background transition-transform duration-300 ${
+        className={`fixed left-0 top-0 z-40 h-screen w-64 border-r-4 border-white bg-black transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0`}
       >
         <div className="flex h-full flex-col">
           {/* Logo */}
-          <div className="flex items-center gap-2 border-b border-border px-6 py-6">
-            <div className="h-8 w-8 rounded-lg bg-primary" />
-            <span className="text-xl font-semibold tracking-tight">encode ai</span>
+          <div className="flex items-center gap-3 border-b-4 border-white px-6 py-8">
+            <div className="h-10 w-10 rounded-none border-2 border-white bg-[rgb(255,102,0)]" />
+            <span className="text-2xl font-bold uppercase tracking-tight text-white">encode ai</span>
           </div>
 
           {/* Navigation */}
-          <nav className="flex-1 space-y-1 px-4 py-6">
+          <nav className="flex-1 space-y-2 px-4 py-8">
             {links.map((link) => {
               const Icon = link.icon
               const isActive = pathname === link.href
@@ -51,10 +51,10 @@ export function Sidebar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`flex items-center gap-3 rounded-lg px-4 py-3 text-sm font-medium transition-colors ${
+                  className={`flex items-center gap-4 rounded-none border-2 px-6 py-4 text-sm font-bold uppercase tracking-wider transition-all ${
                     isActive
-                      ? "bg-primary text-primary-foreground"
-                      : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                      ? "border-white bg-[rgb(255,102,0)] text-black shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
+                      : "border-transparent text-white hover:border-white hover:bg-zinc-900"
                   }`}
                 >
                   <Icon className="h-5 w-5" />
@@ -65,8 +65,8 @@ export function Sidebar() {
           </nav>
 
           {/* Footer */}
-          <div className="border-t border-border px-6 py-4">
-            <p className="text-xs text-muted-foreground">© 2025 encode ai</p>
+          <div className="border-t-4 border-white px-6 py-6">
+            <p className="text-xs font-mono uppercase tracking-wider text-white">© 2025 encode ai</p>
           </div>
         </div>
       </aside>
@@ -74,7 +74,7 @@ export function Sidebar() {
       {/* Overlay for mobile */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-30 bg-background/80 backdrop-blur-sm md:hidden"
+          className="fixed inset-0 z-30 bg-white/10 md:hidden"
           onClick={() => setIsOpen(false)}
         />
       )}

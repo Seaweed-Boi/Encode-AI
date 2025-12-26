@@ -4,9 +4,10 @@ import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const _spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
+const geistMono = Geist_Mono({ 
+  subsets: ["latin"],
+  variable: "--font-mono"
+})
 
 export const metadata: Metadata = {
   title: "encode ai - Where Innovation Meets Intelligence",
@@ -38,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${geistMono.variable} font-mono antialiased`}>
         {children}
         <Analytics />
       </body>
