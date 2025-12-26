@@ -49,9 +49,11 @@ export default function EventsPage() {
                     <span>Tech Hub Building, Room 301</span>
                   </div>
                 </div>
-                <Button className="gap-2">
-                  Register Now <ExternalLink className="h-4 w-4" />
-                </Button>
+                <a href="/hackathon">
+                  <Button className="gap-2">
+                    Register Now <ExternalLink className="h-4 w-4" />
+                  </Button>
+                </a>
               </div>
 
               <div className="rounded-none border-2 border-white bg-black p-8 shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
