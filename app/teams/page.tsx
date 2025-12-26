@@ -180,7 +180,7 @@ export default function Teams() {
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {domain.members.map((member) => (
                     <div key={member.name} className="flex gap-4 rounded-none border-2 border-white bg-black p-6 shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]">
-                      <div className="h-24 w-24 flex-shrink-0 rounded-none border-2 border-white bg-[rgb(255,102,0)]" />
+                      <div className="h-24 w-24 shrink-0 rounded-none border-2 border-white bg-[rgb(255,102,0)]" />
                       <div className="flex flex-col justify-between">
                         <div>
                           <h3 className="mb-1 font-mono text-sm font-bold text-white">{member.name}</h3>

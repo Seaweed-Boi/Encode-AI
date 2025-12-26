@@ -110,39 +110,27 @@ export default function Home() {
           <section className="border-t-4 border-white bg-zinc-950">
             <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
               <div className="mb-20 text-center">
-                <h2 className="mb-6 text-4xl font-bold uppercase tracking-tight text-white lg:text-5xl">Our Team</h2>
+                <h2 className="mb-6 text-4xl font-bold uppercase tracking-tight text-white lg:text-5xl">Our Heads</h2>
                 <p className="mx-auto max-w-2xl text-lg font-mono text-white">
                   Meet the dedicated members leading encode ai and fostering innovation
                 </p>
               </div>
-              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+              <div className="grid gap-8 md:grid-cols-2">
                 <div className="flex flex-col items-center text-center">
                   <div className="mb-6 h-40 w-40 rounded-none border-2 border-white bg-[rgb(255,102,0)] shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]" />
-                  <h3 className="mb-2 text-lg font-bold uppercase text-white">Sarah Chen</h3>
-                  <p className="mb-3 text-sm font-bold uppercase text-[rgb(255,102,0)]">President</p>
+                  <h3 className="mb-2 text-lg font-bold uppercase text-white">Vinitha U S</h3>
+                  <p className="mb-3 text-sm font-bold uppercase text-[rgb(255,102,0)]">Club Head</p>
                   <p className="text-sm font-mono leading-relaxed text-white">
                     ML Engineer passionate about democratizing AI education
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center">
                   <div className="mb-6 h-40 w-40 rounded-none border-2 border-white bg-[rgb(255,102,0)] shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]" />
-                  <h3 className="mb-2 text-lg font-bold uppercase text-white">Marcus Williams</h3>
-                  <p className="mb-3 text-sm font-bold uppercase text-[rgb(255,102,0)]">Vice President</p>
+                  <h3 className="mb-2 text-lg font-bold uppercase text-white">Akshat Tripathi</h3>
+                  <p className="mb-3 text-sm font-bold uppercase text-[rgb(255,102,0)]">Club Head</p>
                   <p className="text-sm font-mono leading-relaxed text-white">
                     Computer Vision researcher with focus on real-time applications
                   </p>
-                </div>
-                <div className="flex flex-col items-center text-center">
-                  <div className="mb-6 h-40 w-40 rounded-none border-2 border-white bg-[rgb(255,102,0)] shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]" />
-                  <h3 className="mb-2 text-lg font-bold uppercase text-white">Priya Patel</h3>
-                  <p className="mb-3 text-sm font-bold uppercase text-[rgb(255,102,0)]">Technical Lead</p>
-                  <p className="text-sm font-mono leading-relaxed text-white">Full-stack developer specializing in AI integration</p>
-                </div>
-                <div className="flex flex-col items-center text-center">
-                  <div className="mb-6 h-40 w-40 rounded-none border-2 border-white bg-[rgb(255,102,0)] shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]" />
-                  <h3 className="mb-2 text-lg font-bold uppercase text-white">Alex Kim</h3>
-                  <p className="mb-3 text-sm font-bold uppercase text-[rgb(255,102,0)]">Events Coordinator</p>
-                  <p className="text-sm font-mono leading-relaxed text-white">NLP enthusiast organizing workshops and hackathons</p>
                 </div>
               </div>
             </div>
