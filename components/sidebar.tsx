@@ -22,7 +22,7 @@ export function Sidebar() {
       <Button
         variant="ghost"
         size="icon"
-        className="fixed left-4 top-4 z-50 md:hidden"
+        className="fixed left-4 top-4 z-50 text-white md:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -37,7 +37,7 @@ export function Sidebar() {
         <div className="flex h-full flex-col">
           {/* Logo */}
           <div className="flex items-center gap-3 border-b-4 border-white px-6 py-8">
-            <div className="h-10 w-10 rounded-none border-2 border-white bg-[rgb(255,102,0)]" />
+            <img src="/logo.png" alt="Encode AI" className="h-10 w-10 rounded-none border-2 border-white" />
             <span className="text-2xl font-bold uppercase tracking-tight text-white">encode ai</span>
           </div>
 

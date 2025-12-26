@@ -189,7 +189,7 @@ export default function Home() {
             <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
               <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
                 <div className="flex items-center gap-3">
-                  <div className="h-8 w-8 rounded-none border-2 border-white bg-[rgb(255,102,0)]" />
+                  <img src="/logo.png" alt="Encode AI" className="h-8 w-8 rounded-none border-2 border-white" />
                   <span className="text-xl font-bold uppercase tracking-tight text-white">encode ai</span>
                 </div>
                 <p className="text-sm font-mono text-white">© 2025 encode ai. All rights reserved.</p>
